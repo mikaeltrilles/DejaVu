@@ -1,0 +1,7 @@
+{
+  "name": "DejaVu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
