@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'save',
+    loadChildren: () => import('./save/save.module').then( m => m.SavePageModule)
+  },
 ];
 
 @NgModule({

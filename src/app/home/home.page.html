@@ -1,20 +1,44 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header>
+  <ion-toolbar color="black"><ion-title>🍿 Déjà Vu</ion-title></ion-toolbar>
+  
+  <ion-toolbar color="black">
+    <ion-searchbar [(ngModel)]="searchTitle" placeholder="Rechercher un film" animated></ion-searchbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="searchMovie()" color="white">
+        <ion-icon name="search-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content [fullscreen]="true" class="center">
+  
+  <div class="img_box">
+    <img src="https://image.tmdb.org/t/p/w500{{movieData.imageUrl}}" />
   </div>
+  <h1>{{ movieData.title }} ⭐️ {{  movieData.note }}</h1>
+
+    <ion-label>
+      <h2>Synopsis</h2>
+    </ion-label>
+    <ion-textarea readonly>
+      {{ movieData.description }}
+    </ion-textarea>
+
+  <ion-button color="success" (click)="add()" expand="fill" fill="solid" shape="block">
+    <ion-icon name="add" slot="start"></ion-icon>
+    Ajoutez à ma liste
+  </ion-button>
+  <ion-button color="warning" (click)="list" expand="fill" fill="solid" shape="block">
+    <ion-icon name="list" slot="start"></ion-icon>
+    Voir ma liste
+  </ion-button>
+
+<ion-item>
+      <ion-label>{{ dejavu.title }}</ion-label>
+      <ion-button color="danger" (click)="remove(movie.id)" expand="fill" fill="solid" shape="block">
+        <ion-icon name="trash" slot="start"></ion-icon>
+        Supprimer
+      </ion-button>
+    </ion-item>
 </ion-content>
