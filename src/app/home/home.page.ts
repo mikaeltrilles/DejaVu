@@ -79,6 +79,7 @@ export class HomePage {
   }
 
   dejavu = [];
+  
   async add() {
 
     if (this.dejavu.indexOf(this.movieData.title) === -1) {
