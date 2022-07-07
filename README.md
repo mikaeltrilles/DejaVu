@@ -11,12 +11,11 @@ Cette Application développé sous Ionic vous permettra de rechercher des films 
 
 Grace à cette application, vous pourrez :
 
-1. Créer un compte
-2. Rechercher un film
-3. Ajouter un film à la liste
-4. Supprimer un film de la liste
-5. Afficher la liste des films mémorisés
-6. Afficher les détails d'un film
+1. Rechercher un film
+2. Ajouter un film à la liste Déjà Vu
+3. Noter le film
+4. Afficher la liste des films mémorisés
+5. Afficher les détails d'un film
 
 ## Technologies utilisées
 
@@ -24,8 +23,6 @@ Grace à cette application, vous pourrez :
 ![Ionic](https://img.shields.io/badge/Ionic-3880FF?style=for-the-badge&logo=ionic&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white)
-
-<!-- ![Firebase](https://img.shields.io/badge/Firebase-%23FFC107.svg?style=for-the-badge&logo=firebase&logoColor=white)   -->
 
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
